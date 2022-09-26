@@ -1,0 +1,11 @@
+{aaa[bbb]/*ccc[ddd]eeeee*/}
+{[aaa]/*zz/*}
+{aa[b]cc(ddd)e/**/}
+*//*
+//
+**
+/**/
+{[aaa]*/*z[]z*/}
+/*/
+/*sadsada*f/
+(sad{dsa)dasD}
