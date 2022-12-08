@@ -304,10 +304,10 @@ public class Sort {
 
         for (int i = 0; i < maxDigit; i++, dev *= 10, mod *= 10) {
             // 考虑负数的情况，这里扩展一倍队列数，其中 [0-9]对应负数，[10-19]对应正数 (bucket + 10)
-            int[][] counter = new int[mod * 2][0];
+            int[][] counter = new int[20][0];
 
             for (int k : arr) {
-                int bucket = ((k % mod) / dev) + mod;
+                int bucket = ((k % mod) / dev) + 10;
                 counter[bucket] = RadixAppend(counter[bucket], k);
             }
 
@@ -350,8 +350,6 @@ public class Sort {
         }
         return lenght;
     }
-
-
 
     /**
      * 自动扩容，并保存数据
